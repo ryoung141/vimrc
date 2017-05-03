@@ -5,7 +5,7 @@ set nocompatible
 set number
 
 "Syntax highlighting
-set syntax
+syntax on
 
 "Color scheme: Desert!
 colo desert
