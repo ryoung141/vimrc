@@ -31,3 +31,4 @@ noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
 inoremap jk <Esc> 
+:noremap \ :set hlsearch! hlsearch?<CR>
