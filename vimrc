@@ -1,6 +1,10 @@
 "Don't try to be compatible with basic VI
 set nocompatible
 
+"Pathogen setup
+execute pathogen#infect()
+filetype plugin indent on
+
 "Show line numbers
 set number
 
