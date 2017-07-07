@@ -11,8 +11,11 @@ set number
 "Syntax highlighting
 syntax on
 
+"Enable mouse
+set mouse=a
+
 "Color scheme: Desert!
-colo desert
+let g:airline_solarized_bg='dark' 
 
 "Formatting changes
 set tabstop=8
@@ -36,3 +39,14 @@ noremap <left> <nop>
 noremap <right> <nop>
 inoremap jk <Esc> 
 :noremap \ :set hlsearch! hlsearch?<CR>
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+"Plugin Settings
+"Open NERDTree automatically when vim starts
+autocmd vimenter * NERDTree
+"Open NERDTree when vim starts w/ no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
