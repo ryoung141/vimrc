@@ -39,6 +39,7 @@ noremap <left> <nop>
 noremap <right> <nop>
 inoremap jk <Esc> 
 :noremap \ :set hlsearch! hlsearch?<CR>
+cmap w!! w !sudo tee > /dev/null %
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
