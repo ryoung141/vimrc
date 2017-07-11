@@ -15,7 +15,12 @@ syntax on
 set mouse=a
 
 "Color scheme: Desert!
-let g:airline_solarized_bg='dark' 
+"FOR LINUX:
+"let g:airline_solarized_bg='dark' 
+"FOR WINDOWS:
+set t_Co=256
+set background=light
+colorscheme PaperColor
 
 "Formatting changes
 set tabstop=8

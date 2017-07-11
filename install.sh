@@ -10,4 +10,5 @@ git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git ~/.vim/bundle/nerdt
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 git clone https://github.com/Townk/vim-autoclose.git ~/.vim/bundle/vim-autoclose
+git clone https://github.com/NLKNguyen/papercolor-theme.git ~/.vim/bundle/papercolor-theme
 ln -sf ~/vimrc/vimrc ~/.vimrc
