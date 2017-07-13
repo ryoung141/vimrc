@@ -14,13 +14,19 @@ syntax on
 "Enable mouse
 set mouse=a
 
-"Color scheme: Desert!
+"Allow normal backspacing
+set backspace=indent,eol,start
+
+"Color scheme 
 "FOR LINUX:
-"let g:airline_solarized_bg='dark' 
-"FOR WINDOWS:
 set t_Co=256
-set background=light
-colorscheme PaperColor
+let g:airline_theme='one'
+colorscheme one
+set background=dark
+"FOR WINDOWS:
+"set t_Co=256
+"set background=light
+"colorscheme PaperColor
 
 "Formatting changes
 set tabstop=8
@@ -46,6 +52,7 @@ inoremap jk <Esc>
 :noremap \ :set hlsearch! hlsearch?<CR>
 cmap w!! w !sudo tee > /dev/null %
 map <C-n> :NERDTreeToggle<CR>
+map <F5> <C-W>w
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
