@@ -18,12 +18,12 @@ set mouse=a
 set backspace=indent,eol,start
 
 "Color scheme 
-"FOR LINUX:
+"linux:
 set t_Co=256
 let g:airline_theme='one'
 colorscheme one
 set background=dark
-"FOR WINDOWS:
+"windows:
 "set t_Co=256
 "set background=light
 "colorscheme PaperColor
@@ -62,4 +62,3 @@ autocmd vimenter * NERDTree
 "Open NERDTree when vim starts w/ no file specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
