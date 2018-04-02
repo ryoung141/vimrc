@@ -13,3 +13,9 @@ git clone https://github.com/Townk/vim-autoclose.git ~/.vim/bundle/vim-autoclose
 git clone https://github.com/rakr/vim-one.git ~/.vim/bundle/vim-one
 git clone https://github.com/NLKNguyen/papercolor-theme.git ~/.vim/bundle/papercolor-theme
 ln -sf ~/vimrc/vimrc ~/.vimrc
+
+echo "parse_git_branch() {" >> ~/.bashrc
+echo "git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' " >> ~/.bashrc
+echo "}" >> ~/.bashrc
+echo 'export PS1="\[\033[33m\][\u@\h] \[\033[32m\]\w\[\033[36m\]\$(parse_git_branch)\[\033[00m\]\n$> "' >> ~/.bashrc
+
