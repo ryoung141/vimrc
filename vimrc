@@ -5,6 +5,9 @@ set nocompatible
 execute pathogen#infect()
 filetype plugin indent on
 
+"Enable FuzzyLoader
+set rtp+=~/.fzf
+
 "Show line numbers
 set number
 
@@ -48,6 +51,7 @@ noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
+nnoremap <c-p> :FZF<cr>
 inoremap jk <Esc> 
 :noremap \ :set hlsearch! hlsearch?<CR>
 cmap w!! w !sudo tee > /dev/null %
@@ -56,9 +60,13 @@ map <F5> <C-W>w
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
+
 "Plugin Settings
 "Open NERDTree automatically when vim starts
 autocmd vimenter * NERDTree
 "Open NERDTree when vim starts w/ no file specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"FZF settings
+"let g:fzf_layout = { 'down': '~40%' }
+"let g:fzf_layout = { 'window': 'enew' }

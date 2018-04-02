@@ -12,6 +12,10 @@ git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-ai
 git clone https://github.com/Townk/vim-autoclose.git ~/.vim/bundle/vim-autoclose
 git clone https://github.com/rakr/vim-one.git ~/.vim/bundle/vim-one
 git clone https://github.com/NLKNguyen/papercolor-theme.git ~/.vim/bundle/papercolor-theme
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+cd ~/.fzf
+./install
+cd
 ln -sf ~/vimrc/vimrc ~/.vimrc
 
 echo "parse_git_branch() {" >> ~/.bashrc
